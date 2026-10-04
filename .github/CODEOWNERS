@@ -1,0 +1,17 @@
+# Every change is reviewed by a maintainer.
+* @innerluxesdev
+
+# The sentences come from the saved pages, and the readers, the checklist, the rules and the reports decide every
+# result; changes need extra care.
+/research/ @innerluxesdev
+/src/data.js @innerluxesdev
+/src/defaults.js @innerluxesdev
+/src/files.js @innerluxesdev
+/src/json.js @innerluxesdev
+/src/config.js @innerluxesdev
+/src/markdown.js @innerluxesdev
+/src/inline.js @innerluxesdev
+/src/sections.js @innerluxesdev
+/src/rules.js @innerluxesdev
+/src/check.js @innerluxesdev
+/src/report.js @innerluxesdev
