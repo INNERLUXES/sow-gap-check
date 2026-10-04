@@ -1,0 +1,19 @@
+{
+  "name": "Brightmoor review rules",
+  "sections": {
+    "security": { "level": "required" },
+    "dataProtection": { "level": "required" },
+    "intellectualProperty": { "level": "required" },
+    "accessibility": {
+      "title": "Accessibility",
+      "aliases": ["accessibility", "a11y"],
+      "level": "recommended"
+    }
+  },
+  "vaguePhrases": { "add": ["world-class", "smooth"] },
+  "rules": {
+    "missingSection": { "required": "error", "recommended": "notice" },
+    "emptySection": { "level": "warning" }
+  },
+  "failOn": "warning"
+}

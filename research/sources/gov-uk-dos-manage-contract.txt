@@ -1,0 +1,81 @@
+Source: https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract
+
+GOV.UK guidance from the Government Digital Service: How to manage your Digital Outcomes and Specialists contract.
+"How to work with suppliers to get the most out of your contract." The page is marked on GOV.UK as withdrawn: "This page
+has been withdrawn as it is out of date." It is kept here as a published government description of what a statement of
+work holds, not as current buying rules. The text of the guidance, from its first paragraph to the section Where to get
+help, with list items marked "-"; the dates of publication and withdrawal, the telephone line of the help section and
+the links at the end are left out. The pound sign is written GBP.
+
+Contents:
+- Understanding the contract scope and writing 'statements of work'
+- Paying suppliers
+- Changes to contracts
+- How to manage supplier performance
+- Dispute resolution
+- Ending a contract
+- Where to get help
+
+When you agree a contract (or 'call-off') with a Digital Outcomes and Specialists supplier on the Digital Marketplace, you'll need to think about how you'll work together.
+Make sure you both:
+- understand and agree to what the contract covers
+- agree to how and when the supplier will be paid
+- know what to do if you disagree about the work
+- know how to change or end a contract
+Understanding the contract scope and writing 'statements of work'
+You'll agree the scope of the contract with the supplier before the buying process ends so you both know what the contract covers. If either you or the supplier isn't clear about anything in the contract, you should talk to each other about this as soon as possible.
+Statements of work list the specific pieces of work that the supplier will do under the contract. You must include an initial statement of work with the contract so that both parties are clear on the first piece of work that needs to be done. Any later statements of work must be:
+- prepared by the buyer before the end of each piece of work
+- agreed by the supplier
+- signed by both the buyer and the supplier
+A statement of work should include:
+- clear descriptions of the work that needs to be done
+- how long the work should take
+- a list of people needed to do the work
+- how the buyer will pay for the work, using either the 'fixed price', 'time and materials' or 'capped time and materials' approach
+- how much the work will cost
+Paying suppliers
+Both parties should be clear about:
+- how buyers will pay for the contract
+- how the payment approach may affect the cost of the work
+- when the supplier will be paid
+Read more about how to pay for services.
+Changes to contracts
+You can't change the scope of your contract.
+You can increase the value of a statement of work by up to 20% as long as you:
+- use your agreed 'contingency margin'
+- need to change what's being delivered in the statement of work
+- agree the increase in writing
+For example, you could increase the amount you pay a supplier in a GBP 10,000 statement of work by up to GBP 2,000.
+You can't pay more if you're hiring user research studios.
+You can increase the original length of the contract by up to 25%. This can help if you realise the work's going to take longer than you'd originally thought.
+You must complete a contract change notice (CCN) if:
+- the total value of the contract is likely to increase
+- you need to extend the original length of the contract by more than 25%
+If you're a central government buyer, you may need to get spend approval.
+If your requirements change so they're no longer covered by the original scope of your contract, you must cancel the contract and start the buying process again. This is so:
+- you can find a service that meets your requirements at the best price
+- suppliers who might be more suited to the work have a fair chance to apply
+A supplier can't charge you more than the maximum price agreed in the contract. If you want the supplier to continue but you've already paid the maximum amount, the contract will be invalid unless you fill in a CCN.
+How to manage supplier performance
+Have open and honest conversations with your supplier about how a project is progressing. When you need to measure a supplier's performance, you should:
+- agree how you'll measure it upfront
+- meet regularly to discuss ongoing performance
+- identify any areas for improvement and agree how to make changes
+- discuss and document poor performance and give the supplier the opportunity to perform better by requesting an improvement plan
+You can use the 'balanced scorecard' in the Digital Outcomes and Specialists contract to help you set key performance indicators (KPIs) to measure performance.
+Dispute resolution
+If you disagree with the supplier about the work that's being done and both parties have made all efforts to resolve the dispute, you should follow a dispute resolution process.
+This should involve an independent third party, for example Acas, to:
+- oversee both sides of the dispute
+- make a decision
+- recommend a course of action
+Read more about the dispute resolution process under 'managing disputes' in the Digital Outcomes and Specialists contract.
+Ending a contract
+If you think you might need to end a contract with a supplier earlier than you planned, you should talk to your internal legal advisor.
+You can end a contract for:
+- convenience, for example if the contract is no longer required
+- a breach of contract, for example if a supplier hasn't done everything they said they would
+- poor performance, for example if consistent poor performance hasn't improved following an improvement plan
+Where to get help
+The Crown Commercial Service can advise you on procurement.

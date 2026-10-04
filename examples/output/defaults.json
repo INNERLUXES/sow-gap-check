@@ -1,0 +1,513 @@
+{
+  "name": "default checklist",
+  "useDefaultSections": false,
+  "sections": {
+    "background": {
+      "title": "Background",
+      "aliases": [
+        "background",
+        "context",
+        "introduction",
+        "overview",
+        "project background",
+        "project overview",
+        "about the project"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "objectives": {
+      "title": "Objectives",
+      "aliases": [
+        "objectives",
+        "objective",
+        "goals",
+        "goal",
+        "aims",
+        "purpose",
+        "project objectives",
+        "business objectives",
+        "outcomes",
+        "desired outcomes"
+      ],
+      "level": "required",
+      "wording": false,
+      "criteria": false
+    },
+    "inScope": {
+      "title": "In scope",
+      "aliases": [
+        "in scope",
+        "scope",
+        "scope of work",
+        "scope of services",
+        "description of services",
+        "description of work",
+        "work to be performed",
+        "requirements",
+        "tasks"
+      ],
+      "level": "required",
+      "wording": false,
+      "criteria": false
+    },
+    "outOfScope": {
+      "title": "Out of scope",
+      "aliases": [
+        "out of scope",
+        "outside scope",
+        "outside the scope",
+        "not in scope",
+        "exclusions",
+        "excluded",
+        "excluded work",
+        "not included",
+        "what is not included"
+      ],
+      "level": "required",
+      "wording": false,
+      "criteria": false
+    },
+    "deliverables": {
+      "title": "Deliverables",
+      "aliases": [
+        "deliverables",
+        "deliverable",
+        "outputs",
+        "work products",
+        "what will be delivered"
+      ],
+      "level": "required",
+      "wording": true,
+      "criteria": false
+    },
+    "acceptance": {
+      "title": "Acceptance criteria",
+      "aliases": [
+        "acceptance criteria",
+        "acceptance",
+        "acceptance tests",
+        "acceptance testing",
+        "user acceptance testing",
+        "uat",
+        "definition of done",
+        "inspection and acceptance",
+        "sign off",
+        "completion criteria"
+      ],
+      "level": "required",
+      "wording": true,
+      "criteria": true
+    },
+    "changeControl": {
+      "title": "Change control",
+      "aliases": [
+        "change control",
+        "change process",
+        "change request",
+        "change requests",
+        "change management",
+        "changes",
+        "contract changes",
+        "changes to the contract",
+        "variations",
+        "change order",
+        "change orders"
+      ],
+      "level": "required",
+      "wording": false,
+      "criteria": false
+    },
+    "assumptions": {
+      "title": "Assumptions",
+      "aliases": [
+        "assumptions",
+        "assumption",
+        "constraints",
+        "operating constraints"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "clientResponsibilities": {
+      "title": "Dependencies and client responsibilities",
+      "aliases": [
+        "dependencies",
+        "dependency",
+        "client responsibilities",
+        "customer responsibilities",
+        "buyer responsibilities",
+        "client obligations",
+        "customer obligations",
+        "responsibilities of the client",
+        "client dependencies",
+        "government furnished items",
+        "client furnished items",
+        "inputs from the client"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "roles": {
+      "title": "Roles and contacts",
+      "aliases": [
+        "roles",
+        "roles and responsibilities",
+        "contacts",
+        "points of contact",
+        "point of contact",
+        "key personnel",
+        "key contacts",
+        "team",
+        "project team",
+        "staffing",
+        "people",
+        "stakeholders"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "schedule": {
+      "title": "Schedule and milestones",
+      "aliases": [
+        "schedule",
+        "milestones",
+        "milestone",
+        "timeline",
+        "timetable",
+        "delivery schedule",
+        "project schedule",
+        "phases",
+        "period of performance",
+        "duration",
+        "time frame",
+        "timeframe"
+      ],
+      "level": "required",
+      "wording": false,
+      "criteria": false
+    },
+    "pricing": {
+      "title": "Pricing and payment terms",
+      "aliases": [
+        "pricing",
+        "price",
+        "prices",
+        "fees",
+        "fee",
+        "payment",
+        "payments",
+        "payment terms",
+        "payment schedule",
+        "invoicing",
+        "charges",
+        "costs",
+        "cost",
+        "commercials",
+        "commercial terms",
+        "budget",
+        "rates",
+        "compensation"
+      ],
+      "level": "required",
+      "wording": false,
+      "criteria": false
+    },
+    "intellectualProperty": {
+      "title": "Intellectual property and ownership",
+      "aliases": [
+        "intellectual property",
+        "intellectual property rights",
+        "ip",
+        "ip rights",
+        "ip ownership",
+        "ownership",
+        "ownership of deliverables",
+        "licensing",
+        "license",
+        "licence"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "confidentiality": {
+      "title": "Confidentiality",
+      "aliases": [
+        "confidentiality",
+        "confidential information",
+        "non disclosure",
+        "nondisclosure",
+        "nda"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "dataProtection": {
+      "title": "Data protection",
+      "aliases": [
+        "data protection",
+        "personal data",
+        "privacy",
+        "data privacy",
+        "gdpr",
+        "processing of personal data",
+        "data processing"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "security": {
+      "title": "Security requirements",
+      "aliases": [
+        "security",
+        "security requirements",
+        "information security",
+        "access control"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "warranty": {
+      "title": "Warranty and defects",
+      "aliases": [
+        "warranty",
+        "warranties",
+        "warranty period",
+        "defects",
+        "defect remediation",
+        "defect correction",
+        "bug fixing",
+        "bug fixes",
+        "guarantee"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "support": {
+      "title": "Support after delivery",
+      "aliases": [
+        "support",
+        "maintenance",
+        "support and maintenance",
+        "post delivery support",
+        "after delivery support",
+        "hypercare",
+        "ongoing support",
+        "service levels",
+        "sla",
+        "handover",
+        "transition"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "termination": {
+      "title": "Termination",
+      "aliases": [
+        "termination",
+        "terminating the agreement",
+        "ending the contract",
+        "ending the agreement",
+        "exit",
+        "exit plan",
+        "cancellation"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "governance": {
+      "title": "Governance and reporting",
+      "aliases": [
+        "governance",
+        "reporting",
+        "reports",
+        "status reporting",
+        "progress reporting",
+        "communication",
+        "communications",
+        "meetings",
+        "project management",
+        "performance management",
+        "steering committee",
+        "escalation"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    },
+    "disputes": {
+      "title": "Dispute resolution",
+      "aliases": [
+        "dispute resolution",
+        "disputes",
+        "dispute"
+      ],
+      "level": "recommended",
+      "wording": false,
+      "criteria": false
+    }
+  },
+  "vaguePhrases": {
+    "replace": [
+      "user-friendly",
+      "user friendly",
+      "easy to use",
+      "intuitive",
+      "fast",
+      "quick",
+      "quickly",
+      "responsive",
+      "performant",
+      "scalable",
+      "flexible",
+      "seamless",
+      "seamlessly",
+      "robust",
+      "modern",
+      "state of the art",
+      "state-of-the-art",
+      "industry standard",
+      "industry-standard",
+      "best practice",
+      "best practices",
+      "best effort",
+      "best efforts",
+      "high quality",
+      "high-quality",
+      "as needed",
+      "as required",
+      "as appropriate",
+      "if possible",
+      "where possible",
+      "as soon as possible",
+      "asap",
+      "in a timely manner",
+      "timely",
+      "reasonable",
+      "adequate",
+      "sufficient",
+      "etc.",
+      "and so on",
+      "and more",
+      "minimal",
+      "optimal",
+      "optimized",
+      "efficient",
+      "appropriate",
+      "normal",
+      "typical",
+      "and/or"
+    ]
+  },
+  "placeholders": {
+    "replace": [
+      "TBD",
+      "TBC",
+      "TBA",
+      "TODO",
+      "FIXME",
+      "XXX",
+      "to be confirmed",
+      "to be determined",
+      "to be decided",
+      "to be defined",
+      "to be agreed",
+      "to be advised",
+      "lorem ipsum",
+      "[...]",
+      "[insert"
+    ]
+  },
+  "standards": {
+    "replace": [
+      "WCAG",
+      "ISO",
+      "IEC",
+      "IEEE",
+      "RFC",
+      "OWASP",
+      "ASVS",
+      "NIST",
+      "PCI DSS",
+      "SOC",
+      "HIPAA",
+      "GDPR",
+      "EN 301 549",
+      "W3C",
+      "OpenAPI"
+    ]
+  },
+  "measureWords": {
+    "replace": [
+      "zero",
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten",
+      "eleven",
+      "twelve",
+      "twenty",
+      "hundred",
+      "thousand",
+      "percent",
+      "half",
+      "none"
+    ]
+  },
+  "testWords": {
+    "replace": [
+      "test",
+      "tests",
+      "test case",
+      "test cases",
+      "test suite",
+      "suite",
+      "scenario",
+      "scenarios",
+      "checklist",
+      "script",
+      "scripts"
+    ]
+  },
+  "rules": {
+    "missingSection": {
+      "required": "error",
+      "recommended": "notice"
+    },
+    "emptySection": {
+      "level": "warning"
+    },
+    "placeholder": {
+      "level": "warning"
+    },
+    "vagueWording": {
+      "level": "warning"
+    },
+    "unmeasurableCriterion": {
+      "level": "warning"
+    },
+    "noOutOfScope": {
+      "level": "error",
+      "inScope": "inScope",
+      "outOfScope": "outOfScope"
+    }
+  },
+  "failOn": "warning"
+}

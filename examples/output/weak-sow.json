@@ -1,0 +1,1535 @@
+{
+  "tool": "sow-gap-check",
+  "version": "1.0.0",
+  "document": {
+    "file": "examples/weak-sow.md",
+    "lines": 56,
+    "headings": 10,
+    "tables": 0,
+    "codeBlocks": 1,
+    "lists": 4,
+    "quotes": 0
+  },
+  "config": {
+    "file": "examples/config.json",
+    "name": "Brightmoor review rules",
+    "failOn": "warning",
+    "sections": {
+      "total": 22,
+      "required": 11,
+      "recommended": 11,
+      "off": 0
+    },
+    "phrases": {
+      "vague": 50,
+      "placeholders": 15,
+      "standards": 15,
+      "measureWords": 19,
+      "testWords": 11
+    },
+    "rules": [
+      {
+        "id": "missing-section",
+        "required": "error",
+        "recommended": "notice",
+        "rule": "a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases"
+      },
+      {
+        "id": "empty-section",
+        "level": "warning",
+        "rule": "a heading under which, down to the next heading at its level or above, there is no paragraph, list, table, code block or block quote, or where every piece of text is nothing but placeholders"
+      },
+      {
+        "id": "placeholder",
+        "level": "warning",
+        "rule": "a placeholder of the list (15 phrases) in a heading or in text of any section, outside code, quotes and links"
+      },
+      {
+        "id": "vague-wording",
+        "level": "warning",
+        "rule": "a phrase of the list (50 phrases) in a paragraph, list item or table cell of a section marked for wording (Deliverables, Acceptance criteria), outside code, quotes and links"
+      },
+      {
+        "id": "unmeasurable-criterion",
+        "level": "warning",
+        "rule": "a list item with no list inside it, in a section marked for criteria (Acceptance criteria), that holds no digit, no number word, no code span, no named standard and no quoted name next to a test word"
+      },
+      {
+        "id": "no-out-of-scope",
+        "level": "error",
+        "rule": "the section In scope is there and holds text, and the section Out of scope is missing or empty"
+      }
+    ]
+  },
+  "totals": {
+    "found": 7,
+    "empty": 2,
+    "missing": 13,
+    "off": 0
+  },
+  "checklist": [
+    {
+      "id": "background",
+      "title": "Background",
+      "level": "recommended",
+      "status": "missing",
+      "aliases": [
+        "background",
+        "context",
+        "introduction",
+        "overview",
+        "project background",
+        "project overview",
+        "about the project"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [],
+      "basis": [
+        {
+          "source": "gsa",
+          "section": "1.0 BACKGROUND",
+          "text": "PROVIDE THE BACKGROUND INFORMATION THAT PROVIDES A HIGH LEVEL DESCRIPTION OF THE REQUIREMENT OF THE CLIENT.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "(4) Background;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "id": "objectives",
+      "title": "Objectives",
+      "level": "required",
+      "status": "found",
+      "aliases": [
+        "objectives",
+        "objective",
+        "goals",
+        "goal",
+        "aims",
+        "purpose",
+        "project objectives",
+        "business objectives",
+        "outcomes",
+        "desired outcomes"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [
+        {
+          "text": "1. Goals",
+          "line": 5,
+          "alias": "goals",
+          "state": "body"
+        }
+      ],
+      "basis": [
+        {
+          "source": "gsa",
+          "section": "2.0 OBJECTIVES",
+          "text": "DESCRIBE WHAT THIS TASK WILL ACCOMPLISH. THIS SHOULD REFLECT THE END STATE THE CLIENT WANTS TO ACHIEVE.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "(1) Purpose;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "(5) Performance objectives, i.e., required results; and",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "id": "inScope",
+      "title": "In scope",
+      "level": "required",
+      "status": "found",
+      "aliases": [
+        "in scope",
+        "scope",
+        "scope of work",
+        "scope of services",
+        "description of services",
+        "description of work",
+        "work to be performed",
+        "requirements",
+        "tasks"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [
+        {
+          "text": "2. Scope",
+          "line": 9,
+          "alias": "scope",
+          "state": "body"
+        }
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "clear descriptions of the work that needs to be done",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "gsa",
+          "section": "3.0 SCOPE",
+          "text": "DESCRIBE THE TYPE OF WORK (RANGE OF TASKS) THE TASK ORDER WILL SUPPORT.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "(2) Scope or mission;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "id": "outOfScope",
+      "title": "Out of scope",
+      "level": "required",
+      "status": "missing",
+      "aliases": [
+        "out of scope",
+        "outside scope",
+        "outside the scope",
+        "not in scope",
+        "exclusions",
+        "excluded",
+        "excluded work",
+        "not included",
+        "what is not included"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": "No saved page names a list of what is excluded. The tool asks for it because work that is in scope only by silence is a frequent cause of disputes; the no-out-of-scope rule checks it next to the scope.",
+      "origin": "default",
+      "headings": [],
+      "basis": []
+    },
+    {
+      "id": "deliverables",
+      "title": "Deliverables",
+      "level": "required",
+      "status": "found",
+      "aliases": [
+        "deliverables",
+        "deliverable",
+        "outputs",
+        "work products",
+        "what will be delivered"
+      ],
+      "wording": true,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [
+        {
+          "text": "3. Deliverables",
+          "line": 17,
+          "alias": "deliverables",
+          "state": "body"
+        }
+      ],
+      "basis": [
+        {
+          "source": "gsa",
+          "section": "5.1 Deliverables",
+          "text": "DESCRIBE ALL EXPECTED DELIVERABLES AND THE TIMEFRAME FOR THEIR DELIVERY.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "title": "Acceptance criteria",
+      "level": "required",
+      "status": "found",
+      "aliases": [
+        "acceptance criteria",
+        "acceptance",
+        "acceptance tests",
+        "acceptance testing",
+        "user acceptance testing",
+        "uat",
+        "definition of done",
+        "inspection and acceptance",
+        "sign off",
+        "completion criteria"
+      ],
+      "wording": true,
+      "criteria": true,
+      "own": null,
+      "origin": "default",
+      "headings": [
+        {
+          "text": "4. Acceptance",
+          "line": 30,
+          "alias": "acceptance",
+          "state": "body"
+        }
+      ],
+      "basis": [
+        {
+          "source": "gsa",
+          "section": "5.1.2 Inspection and Acceptance of Services",
+          "text": "All periodic reports and task deliverables shall be inspected, tested (where applicable), reviewed, and accepted by the Government within a reasonable period of time",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        },
+        {
+          "source": "gsa",
+          "section": "5.1.2 Inspection and Acceptance of Services",
+          "text": "DESCRIBE ACCEPTANCE CRITERIA AS APPLICABLE TO THE TASK.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "Enable assessment of work performance against measurable performance standards;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "id": "changeControl",
+      "title": "Change control",
+      "level": "required",
+      "status": "empty",
+      "aliases": [
+        "change control",
+        "change process",
+        "change request",
+        "change requests",
+        "change management",
+        "changes",
+        "contract changes",
+        "changes to the contract",
+        "variations",
+        "change order",
+        "change orders"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [
+        {
+          "text": "7. Change requests",
+          "line": 47,
+          "alias": "change requests",
+          "state": "empty"
+        }
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Changes to contracts",
+          "text": "You must complete a contract change notice (CCN) if:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "id": "assumptions",
+      "title": "Assumptions",
+      "level": "recommended",
+      "status": "missing",
+      "aliases": [
+        "assumptions",
+        "assumption",
+        "constraints",
+        "operating constraints"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": "FAR 37.602 names operating constraints; assumptions are the tool's own addition, because an assumption that is written down can be checked when it turns out wrong.",
+      "origin": "default",
+      "headings": [],
+      "basis": [
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "(6) Any operating constraints.",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "id": "clientResponsibilities",
+      "title": "Dependencies and client responsibilities",
+      "level": "recommended",
+      "status": "missing",
+      "aliases": [
+        "dependencies",
+        "dependency",
+        "client responsibilities",
+        "customer responsibilities",
+        "buyer responsibilities",
+        "client obligations",
+        "customer obligations",
+        "responsibilities of the client",
+        "client dependencies",
+        "government furnished items",
+        "client furnished items",
+        "inputs from the client"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [],
+      "basis": [
+        {
+          "source": "gsa",
+          "section": "6.6.9 Government Furnished Items",
+          "text": "DESCRIBE ALL GFE. INCLUDE WHAT IS BEING PROVIDED AND WHEN IT WILL BE PROVIDED.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "id": "roles",
+      "title": "Roles and contacts",
+      "level": "recommended",
+      "status": "found",
+      "aliases": [
+        "roles",
+        "roles and responsibilities",
+        "contacts",
+        "points of contact",
+        "point of contact",
+        "key personnel",
+        "key contacts",
+        "team",
+        "project team",
+        "staffing",
+        "people",
+        "stakeholders"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [
+        {
+          "text": "8. Team",
+          "line": 49,
+          "alias": "team",
+          "state": "body"
+        }
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "a list of people needed to do the work",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "gsa",
+          "section": "APPENDIX A",
+          "text": "1.0 POINTS OF CONTACT.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "id": "schedule",
+      "title": "Schedule and milestones",
+      "level": "required",
+      "status": "empty",
+      "aliases": [
+        "schedule",
+        "milestones",
+        "milestone",
+        "timeline",
+        "timetable",
+        "delivery schedule",
+        "project schedule",
+        "phases",
+        "period of performance",
+        "duration",
+        "time frame",
+        "timeframe"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [
+        {
+          "text": "5. Timeline",
+          "line": 39,
+          "alias": "timeline",
+          "state": "placeholder"
+        }
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "how long the work should take",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "(3) Period and place of performance;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "gsa",
+          "section": "6.2 Period of Performance (POP) and FAR Clauses in Full Text or by Reference",
+          "text": "The POP for this task is a [#-MONTH BASE + #/DURATION OF OPTIONS].",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "title": "Pricing and payment terms",
+      "level": "required",
+      "status": "found",
+      "aliases": [
+        "pricing",
+        "price",
+        "prices",
+        "fees",
+        "fee",
+        "payment",
+        "payments",
+        "payment terms",
+        "payment schedule",
+        "invoicing",
+        "charges",
+        "costs",
+        "cost",
+        "commercials",
+        "commercial terms",
+        "budget",
+        "rates",
+        "compensation"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [
+        {
+          "text": "6. Pricing",
+          "line": 43,
+          "alias": "pricing",
+          "state": "body"
+        }
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "how the buyer will pay for the work, using either the 'fixed price', 'time and materials' or 'capped time and materials' approach",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "how much the work will cost",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "gsa",
+          "section": "7.0 INVOICING/ PROCEDURES FOR PAYMENT",
+          "text": "The contractor shall submit only one invoice per month per order/contract.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "id": "intellectualProperty",
+      "title": "Intellectual property and ownership",
+      "level": "required",
+      "status": "missing",
+      "aliases": [
+        "intellectual property",
+        "intellectual property rights",
+        "ip",
+        "ip rights",
+        "ip ownership",
+        "ownership",
+        "ownership of deliverables",
+        "licensing",
+        "license",
+        "licence"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "changed",
+      "headings": [],
+      "basis": [
+        {
+          "source": "gsa",
+          "section": "6.6.8 Records/Data",
+          "text": "All deliverables become the sole property of the United States Government.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "id": "confidentiality",
+      "title": "Confidentiality",
+      "level": "recommended",
+      "status": "missing",
+      "aliases": [
+        "confidentiality",
+        "confidential information",
+        "non disclosure",
+        "nondisclosure",
+        "nda"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": "No saved page names confidentiality. The tool lists it because an outsourced team sees the client's code, data and plans, and the rules for that information belong in writing.",
+      "origin": "default",
+      "headings": [],
+      "basis": []
+    },
+    {
+      "id": "dataProtection",
+      "title": "Data protection",
+      "level": "required",
+      "status": "missing",
+      "aliases": [
+        "data protection",
+        "personal data",
+        "privacy",
+        "data privacy",
+        "gdpr",
+        "processing of personal data",
+        "data processing"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "changed",
+      "headings": [],
+      "basis": [
+        {
+          "source": "gsa",
+          "section": "6.6.5 Privacy Act",
+          "text": "Work on this project may require that personnel have access to Privacy Information.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security requirements",
+      "level": "required",
+      "status": "missing",
+      "aliases": [
+        "security",
+        "security requirements",
+        "information security",
+        "access control"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "changed",
+      "headings": [],
+      "basis": [
+        {
+          "source": "gsa",
+          "section": "6.4 Security",
+          "text": "Note: This requirement must be met on any procurement, IT, PS, etc., where the contractor will have access to government electronic information.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "id": "warranty",
+      "title": "Warranty and defects",
+      "level": "recommended",
+      "status": "missing",
+      "aliases": [
+        "warranty",
+        "warranties",
+        "warranty period",
+        "defects",
+        "defect remediation",
+        "defect correction",
+        "bug fixing",
+        "bug fixes",
+        "guarantee"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [],
+      "basis": [
+        {
+          "source": "gsa",
+          "section": "5.1.2 Inspection and Acceptance of Services",
+          "text": "Performance by the Contractor to correct defects found by the Government as a result of quality assurance surveillance and by the Contractor as a result of quality control",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "Support after delivery",
+      "level": "recommended",
+      "status": "found",
+      "aliases": [
+        "support",
+        "maintenance",
+        "support and maintenance",
+        "post delivery support",
+        "after delivery support",
+        "hypercare",
+        "ongoing support",
+        "service levels",
+        "sla",
+        "handover",
+        "transition"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": "No saved page names support after delivery. The GSA template asks for a transition plan out of the task order, which is close but not the same; the tool lists support because who fixes what after the handover is a frequent question at the end of an outsourced project.",
+      "origin": "default",
+      "headings": [
+        {
+          "text": "9. Support",
+          "line": 54,
+          "alias": "support",
+          "state": "body"
+        }
+      ],
+      "basis": []
+    },
+    {
+      "id": "termination",
+      "title": "Termination",
+      "level": "recommended",
+      "status": "missing",
+      "aliases": [
+        "termination",
+        "terminating the agreement",
+        "ending the contract",
+        "ending the agreement",
+        "exit",
+        "exit plan",
+        "cancellation"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Ending a contract",
+          "text": "You can end a contract for:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Governance and reporting",
+      "level": "recommended",
+      "status": "missing",
+      "aliases": [
+        "governance",
+        "reporting",
+        "reports",
+        "status reporting",
+        "progress reporting",
+        "communication",
+        "communications",
+        "meetings",
+        "project management",
+        "performance management",
+        "steering committee",
+        "escalation"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "How to manage supplier performance",
+          "text": "agree how you'll measure it upfront",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "gov-uk",
+          "section": "How to manage supplier performance",
+          "text": "meet regularly to discuss ongoing performance",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "gsa",
+          "section": "5.1.2 Inspection and Acceptance of Services",
+          "text": "The client representative will monitor compliance and report to the PM.",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "id": "disputes",
+      "title": "Dispute resolution",
+      "level": "recommended",
+      "status": "missing",
+      "aliases": [
+        "dispute resolution",
+        "disputes",
+        "dispute"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "default",
+      "headings": [],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Dispute resolution",
+          "text": "If you disagree with the supplier about the work that's being done and both parties have made all efforts to resolve the dispute, you should follow a dispute resolution process.",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "id": "accessibility",
+      "title": "Accessibility",
+      "level": "recommended",
+      "status": "missing",
+      "aliases": [
+        "accessibility",
+        "a11y"
+      ],
+      "wording": false,
+      "criteria": false,
+      "own": null,
+      "origin": "config",
+      "headings": [],
+      "basis": []
+    }
+  ],
+  "findings": [
+    {
+      "rule": "missing-section",
+      "level": "error",
+      "section": "intellectualProperty",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "required section Intellectual property and ownership is missing",
+      "why": [
+        "no heading matches one of its aliases: intellectual property, intellectual property rights, ip, ip rights, ip ownership, ownership, ownership of deliverables, licensing and 2 more",
+        "on the checklist because \"All deliverables become the sole property of the United States Government.\""
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "rule": "missing-section",
+      "level": "error",
+      "section": "dataProtection",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "required section Data protection is missing",
+      "why": [
+        "no heading matches one of its aliases: data protection, personal data, privacy, data privacy, gdpr, processing of personal data and data processing",
+        "on the checklist because \"Work on this project may require that personnel have access to Privacy Information.\""
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "rule": "missing-section",
+      "level": "error",
+      "section": "security",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "required section Security requirements is missing",
+      "why": [
+        "no heading matches one of its aliases: security, security requirements, information security and access control",
+        "on the checklist because \"Note: This requirement must be met on any procurement, IT, PS, etc., where the contractor will have access to government electronic information.\""
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "rule": "no-out-of-scope",
+      "level": "error",
+      "section": "outOfScope",
+      "line": 9,
+      "column": 4,
+      "at": "examples/weak-sow.md:9:4",
+      "found": "the scope is described under \"2. Scope\" (line 9), but there is no section Out of scope",
+      "why": [
+        "In scope is matched by the heading \"2. Scope\" through the alias scope, and holds text",
+        "no heading matches an alias of Out of scope: out of scope, outside scope, outside the scope, not in scope, exclusions, excluded and 3 more",
+        "what is not part of the work is then decided later, by whoever reads the scope"
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "You'll agree the scope of the contract with the supplier before the buying process ends so you both know what the contract covers.",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "rule": "vague-wording",
+      "level": "warning",
+      "section": "deliverables",
+      "line": 19,
+      "column": 5,
+      "at": "examples/weak-sow.md:19:5",
+      "found": "vague wording \"fast\" in \"3. Deliverables\": A fast, user-friendly web portal that works on phones.",
+      "why": [
+        "fast is on the list of vague phrases, and \"3. Deliverables\" matches Deliverables, a section marked for wording",
+        "two people can read it two ways, so it cannot decide whether the work is done"
+      ],
+      "basis": [
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "Enable assessment of work performance against measurable performance standards;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "clear descriptions of the work that needs to be done",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "rule": "vague-wording",
+      "level": "warning",
+      "section": "deliverables",
+      "line": 19,
+      "column": 11,
+      "at": "examples/weak-sow.md:19:11",
+      "found": "vague wording \"user-friendly\" in \"3. Deliverables\": A fast, user-friendly web portal that works on phones.",
+      "why": [
+        "user-friendly is on the list of vague phrases, and \"3. Deliverables\" matches Deliverables, a section marked for wording",
+        "two people can read it two ways, so it cannot decide whether the work is done"
+      ],
+      "basis": [
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "Enable assessment of work performance against measurable performance standards;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "clear descriptions of the work that needs to be done",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "rule": "vague-wording",
+      "level": "warning",
+      "section": "deliverables",
+      "line": 20,
+      "column": 30,
+      "at": "examples/weak-sow.md:20:30",
+      "found": "vague wording \"as needed\" in \"3. Deliverables\": An admin area with reports as needed.",
+      "why": [
+        "as needed is on the list of vague phrases, and \"3. Deliverables\" matches Deliverables, a section marked for wording",
+        "two people can read it two ways, so it cannot decide whether the work is done"
+      ],
+      "basis": [
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "Enable assessment of work performance against measurable performance standards;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "clear descriptions of the work that needs to be done",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "rule": "vague-wording",
+      "level": "warning",
+      "section": "deliverables",
+      "line": 21,
+      "column": 36,
+      "at": "examples/weak-sow.md:21:36",
+      "found": "vague wording \"if possible\" in \"3. Deliverables\": A link to the accounting system, if possible.",
+      "why": [
+        "if possible is on the list of vague phrases, and \"3. Deliverables\" matches Deliverables, a section marked for wording",
+        "two people can read it two ways, so it cannot decide whether the work is done"
+      ],
+      "basis": [
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "Enable assessment of work performance against measurable performance standards;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "clear descriptions of the work that needs to be done",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "rule": "vague-wording",
+      "level": "warning",
+      "section": "deliverables",
+      "line": 22,
+      "column": 17,
+      "at": "examples/weak-sow.md:22:17",
+      "found": "vague wording \"and so on\" in \"3. Deliverables\": Documentation and so on.",
+      "why": [
+        "and so on is on the list of vague phrases, and \"3. Deliverables\" matches Deliverables, a section marked for wording",
+        "two people can read it two ways, so it cannot decide whether the work is done"
+      ],
+      "basis": [
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "Enable assessment of work performance against measurable performance standards;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "clear descriptions of the work that needs to be done",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "rule": "unmeasurable-criterion",
+      "level": "warning",
+      "section": "acceptance",
+      "line": 34,
+      "column": 3,
+      "at": "examples/weak-sow.md:34:3",
+      "found": "acceptance criterion with nothing to measure in \"4. Acceptance\": The portal is easy to use for cafe staff.",
+      "why": [
+        "a list item under \"4. Acceptance\", which matches Acceptance criteria, a section marked for criteria",
+        "it holds no digit, no number word, no code span, no named standard and no quoted name next to a test word"
+      ],
+      "basis": [
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "Enable assessment of work performance against measurable performance standards;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "gsa",
+          "section": "5.1.2 Inspection and Acceptance of Services",
+          "text": "All periodic reports and task deliverables shall be inspected, tested (where applicable), reviewed, and accepted by the Government within a reasonable period of time",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "rule": "vague-wording",
+      "level": "warning",
+      "section": "acceptance",
+      "line": 34,
+      "column": 17,
+      "at": "examples/weak-sow.md:34:17",
+      "found": "vague wording \"easy to use\" in \"4. Acceptance\": The portal is easy to use for cafe staff.",
+      "why": [
+        "easy to use is on the list of vague phrases, and \"4. Acceptance\" matches Acceptance criteria, a section marked for wording",
+        "two people can read it two ways, so it cannot decide whether the work is done"
+      ],
+      "basis": [
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "Enable assessment of work performance against measurable performance standards;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "clear descriptions of the work that needs to be done",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "rule": "unmeasurable-criterion",
+      "level": "warning",
+      "section": "acceptance",
+      "line": 35,
+      "column": 3,
+      "at": "examples/weak-sow.md:35:3",
+      "found": "acceptance criterion with nothing to measure in \"4. Acceptance\": Pages load quickly.",
+      "why": [
+        "a list item under \"4. Acceptance\", which matches Acceptance criteria, a section marked for criteria",
+        "it holds no digit, no number word, no code span, no named standard and no quoted name next to a test word"
+      ],
+      "basis": [
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "Enable assessment of work performance against measurable performance standards;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "gsa",
+          "section": "5.1.2 Inspection and Acceptance of Services",
+          "text": "All periodic reports and task deliverables shall be inspected, tested (where applicable), reviewed, and accepted by the Government within a reasonable period of time",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "rule": "vague-wording",
+      "level": "warning",
+      "section": "acceptance",
+      "line": 35,
+      "column": 14,
+      "at": "examples/weak-sow.md:35:14",
+      "found": "vague wording \"quickly\" in \"4. Acceptance\": Pages load quickly.",
+      "why": [
+        "quickly is on the list of vague phrases, and \"4. Acceptance\" matches Acceptance criteria, a section marked for wording",
+        "two people can read it two ways, so it cannot decide whether the work is done"
+      ],
+      "basis": [
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "Enable assessment of work performance against measurable performance standards;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "clear descriptions of the work that needs to be done",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "rule": "unmeasurable-criterion",
+      "level": "warning",
+      "section": "acceptance",
+      "line": 36,
+      "column": 3,
+      "at": "examples/weak-sow.md:36:3",
+      "found": "acceptance criterion with nothing to measure in \"4. Acceptance\": Orders reach the accounting system.",
+      "why": [
+        "a list item under \"4. Acceptance\", which matches Acceptance criteria, a section marked for criteria",
+        "it holds no digit, no number word, no code span, no named standard and no quoted name next to a test word"
+      ],
+      "basis": [
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "Enable assessment of work performance against measurable performance standards;",
+          "page": "https://www.acquisition.gov/far/37.602"
+        },
+        {
+          "source": "gsa",
+          "section": "5.1.2 Inspection and Acceptance of Services",
+          "text": "All periodic reports and task deliverables shall be inspected, tested (where applicable), reviewed, and accepted by the Government within a reasonable period of time",
+          "page": "https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf"
+        }
+      ]
+    },
+    {
+      "rule": "empty-section",
+      "level": "warning",
+      "section": "schedule",
+      "line": 39,
+      "column": 4,
+      "at": "examples/weak-sow.md:39:4",
+      "found": "the heading \"5. Timeline\" holds nothing but TBD",
+      "why": [
+        "the heading matches the checklist section Schedule and milestones",
+        "every piece of text under it is a placeholder once the placeholders are taken out"
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "clear descriptions of the work that needs to be done",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "rule": "empty-section",
+      "level": "warning",
+      "section": "changeControl",
+      "line": 47,
+      "column": 4,
+      "at": "examples/weak-sow.md:47:4",
+      "found": "the heading \"7. Change requests\" has no text under it",
+      "why": [
+        "the heading matches the checklist section Change control",
+        "there is no paragraph, list, table, code block or block quote before the next heading at its level or above"
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "clear descriptions of the work that needs to be done",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "rule": "placeholder",
+      "level": "warning",
+      "section": null,
+      "line": 56,
+      "column": 65,
+      "at": "examples/weak-sow.md:56:65",
+      "found": "placeholder to be confirmed in \"9. Support\": Lanternfield will fix problems in a timely manner after launch, to be confirmed.",
+      "why": [
+        "to be confirmed is on the list of placeholders; the text around it is not written yet"
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "clear descriptions of the work that needs to be done",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        }
+      ]
+    },
+    {
+      "rule": "missing-section",
+      "level": "notice",
+      "section": "background",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "recommended section Background is missing",
+      "why": [
+        "no heading matches one of its aliases: background, context, introduction, overview, project background, project overview and about the project",
+        "on the checklist because \"PROVIDE THE BACKGROUND INFORMATION THAT PROVIDES A HIGH LEVEL DESCRIPTION OF THE REQUIREMENT OF THE CLIENT.\" and \"(4) Background;\""
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "rule": "missing-section",
+      "level": "notice",
+      "section": "assumptions",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "recommended section Assumptions is missing",
+      "why": [
+        "no heading matches one of its aliases: assumptions, assumption, constraints and operating constraints",
+        "on the checklist as the tool's own choice: FAR 37.602 names operating constraints; assumptions are the tool's own addition, because an assumption that is written down can be checked when it turns out wrong."
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "rule": "missing-section",
+      "level": "notice",
+      "section": "clientResponsibilities",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "recommended section Dependencies and client responsibilities is missing",
+      "why": [
+        "no heading matches one of its aliases: dependencies, dependency, client responsibilities, customer responsibilities, buyer responsibilities, client obligations, customer obligations, responsibilities of the client and 4 more",
+        "on the checklist because \"DESCRIBE ALL GFE. INCLUDE WHAT IS BEING PROVIDED AND WHEN IT WILL BE PROVIDED.\""
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "rule": "missing-section",
+      "level": "notice",
+      "section": "confidentiality",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "recommended section Confidentiality is missing",
+      "why": [
+        "no heading matches one of its aliases: confidentiality, confidential information, non disclosure, nondisclosure and nda",
+        "on the checklist as the tool's own choice: No saved page names confidentiality. The tool lists it because an outsourced team sees the client's code, data and plans, and the rules for that information belong in writing."
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "rule": "missing-section",
+      "level": "notice",
+      "section": "warranty",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "recommended section Warranty and defects is missing",
+      "why": [
+        "no heading matches one of its aliases: warranty, warranties, warranty period, defects, defect remediation, defect correction, bug fixing, bug fixes and 1 more",
+        "on the checklist because \"Performance by the Contractor to correct defects found by the Government as a result of quality assurance surveillance and by the Contractor as a result of quality control\""
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "rule": "missing-section",
+      "level": "notice",
+      "section": "termination",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "recommended section Termination is missing",
+      "why": [
+        "no heading matches one of its aliases: termination, terminating the agreement, ending the contract, ending the agreement, exit, exit plan and cancellation",
+        "on the checklist because \"You can end a contract for:\""
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "rule": "missing-section",
+      "level": "notice",
+      "section": "governance",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "recommended section Governance and reporting is missing",
+      "why": [
+        "no heading matches one of its aliases: governance, reporting, reports, status reporting, progress reporting, communication, communications, meetings and 4 more",
+        "on the checklist because \"agree how you'll measure it upfront\" and \"meet regularly to discuss ongoing performance\" and \"The client representative will monitor compliance and report to the PM.\""
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "rule": "missing-section",
+      "level": "notice",
+      "section": "disputes",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "recommended section Dispute resolution is missing",
+      "why": [
+        "no heading matches one of its aliases: dispute resolution, disputes and dispute",
+        "on the checklist because \"If you disagree with the supplier about the work that's being done and both parties have made all efforts to resolve the dispute, you should follow a dispute resolution process.\""
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    },
+    {
+      "rule": "missing-section",
+      "level": "notice",
+      "section": "accessibility",
+      "line": null,
+      "column": null,
+      "at": "examples/weak-sow.md",
+      "found": "recommended section Accessibility is missing",
+      "why": [
+        "no heading matches one of its aliases: accessibility and a11y",
+        "on the checklist because "
+      ],
+      "basis": [
+        {
+          "source": "gov-uk",
+          "section": "Understanding the contract scope and writing 'statements of work'",
+          "text": "A statement of work should include:",
+          "page": "https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract"
+        },
+        {
+          "source": "far",
+          "section": "37.602 Performance work statement.",
+          "text": "The SOO shall, at a minimum, include-",
+          "page": "https://www.acquisition.gov/far/37.602"
+        }
+      ]
+    }
+  ],
+  "verdict": {
+    "pass": false,
+    "failOn": "warning",
+    "failing": 17,
+    "byLevel": {
+      "error": 4,
+      "warning": 13,
+      "notice": 9
+    },
+    "text": "FAIL - 17 findings at or above warning"
+  },
+  "notes": [],
+  "notice": "This report checks the structure and the wording of the document only. It is not a legal review and gives no legal advice."
+}

@@ -1,0 +1,299 @@
+sow-gap-check: examples/weak-sow.md
+document: examples/weak-sow.md (56 lines, 10 headings, 4 lists, 0 tables, 1 code block, 0 block quotes)
+checklist: examples/config.json (Brightmoor review rules): 22 sections (11 required, 11 recommended), 50 vague phrases, 15 placeholders
+rules: missing-section (required error, recommended notice); empty-section (warning); placeholder (warning); vague-wording (warning); unmeasurable-criterion (warning); no-out-of-scope (error)
+results: 7 of 22 sections found, 2 empty, 13 missing
+findings: 26 (4 error, 13 warning, 9 notice); fail level warning
+
+Findings (26)
+
+  ERROR    missing-section         examples/weak-sow.md
+           required section Intellectual property and ownership is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: intellectual property, intellectual property rights, ip, ip rights, ip ownership, ownership, ownership of deliverables, licensing and 2 more
+           why: on the checklist because "All deliverables become the sole property of the United States Government."
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+  ERROR    missing-section         examples/weak-sow.md
+           required section Data protection is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: data protection, personal data, privacy, data privacy, gdpr, processing of personal data and data processing
+           why: on the checklist because "Work on this project may require that personnel have access to Privacy Information."
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+  ERROR    missing-section         examples/weak-sow.md
+           required section Security requirements is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: security, security requirements, information security and access control
+           why: on the checklist because "Note: This requirement must be met on any procurement, IT, PS, etc., where the contractor will have access to government electronic information."
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+  ERROR    no-out-of-scope         examples/weak-sow.md:9:4
+           the scope is described under "2. Scope" (line 9), but there is no section Out of scope
+           rule: the section In scope is there and holds text, and the section Out of scope is missing or empty
+           why: In scope is matched by the heading "2. Scope" through the alias scope, and holds text
+           why: no heading matches an alias of Out of scope: out of scope, outside scope, outside the scope, not in scope, exclusions, excluded and 3 more
+           why: what is not part of the work is then decided later, by whoever reads the scope
+           basis: "You'll agree the scope of the contract with the supplier before the buying process ends so you both know what the contract covers." (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+
+  WARNING  vague-wording           examples/weak-sow.md:19:5
+           vague wording "fast" in "3. Deliverables": A fast, user-friendly web portal that works on phones.
+           rule: a phrase of the list (50 phrases) in a paragraph, list item or table cell of a section marked for wording (Deliverables, Acceptance criteria), outside code, quotes and links
+           why: fast is on the list of vague phrases, and "3. Deliverables" matches Deliverables, a section marked for wording
+           why: two people can read it two ways, so it cannot decide whether the work is done
+           basis: "Enable assessment of work performance against measurable performance standards;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+           basis: "clear descriptions of the work that needs to be done" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+
+  WARNING  vague-wording           examples/weak-sow.md:19:11
+           vague wording "user-friendly" in "3. Deliverables": A fast, user-friendly web portal that works on phones.
+           rule: a phrase of the list (50 phrases) in a paragraph, list item or table cell of a section marked for wording (Deliverables, Acceptance criteria), outside code, quotes and links
+           why: user-friendly is on the list of vague phrases, and "3. Deliverables" matches Deliverables, a section marked for wording
+           why: two people can read it two ways, so it cannot decide whether the work is done
+           basis: "Enable assessment of work performance against measurable performance standards;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+           basis: "clear descriptions of the work that needs to be done" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+
+  WARNING  vague-wording           examples/weak-sow.md:20:30
+           vague wording "as needed" in "3. Deliverables": An admin area with reports as needed.
+           rule: a phrase of the list (50 phrases) in a paragraph, list item or table cell of a section marked for wording (Deliverables, Acceptance criteria), outside code, quotes and links
+           why: as needed is on the list of vague phrases, and "3. Deliverables" matches Deliverables, a section marked for wording
+           why: two people can read it two ways, so it cannot decide whether the work is done
+           basis: "Enable assessment of work performance against measurable performance standards;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+           basis: "clear descriptions of the work that needs to be done" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+
+  WARNING  vague-wording           examples/weak-sow.md:21:36
+           vague wording "if possible" in "3. Deliverables": A link to the accounting system, if possible.
+           rule: a phrase of the list (50 phrases) in a paragraph, list item or table cell of a section marked for wording (Deliverables, Acceptance criteria), outside code, quotes and links
+           why: if possible is on the list of vague phrases, and "3. Deliverables" matches Deliverables, a section marked for wording
+           why: two people can read it two ways, so it cannot decide whether the work is done
+           basis: "Enable assessment of work performance against measurable performance standards;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+           basis: "clear descriptions of the work that needs to be done" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+
+  WARNING  vague-wording           examples/weak-sow.md:22:17
+           vague wording "and so on" in "3. Deliverables": Documentation and so on.
+           rule: a phrase of the list (50 phrases) in a paragraph, list item or table cell of a section marked for wording (Deliverables, Acceptance criteria), outside code, quotes and links
+           why: and so on is on the list of vague phrases, and "3. Deliverables" matches Deliverables, a section marked for wording
+           why: two people can read it two ways, so it cannot decide whether the work is done
+           basis: "Enable assessment of work performance against measurable performance standards;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+           basis: "clear descriptions of the work that needs to be done" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+
+  WARNING  unmeasurable-criterion  examples/weak-sow.md:34:3
+           acceptance criterion with nothing to measure in "4. Acceptance": The portal is easy to use for cafe staff.
+           rule: a list item with no list inside it, in a section marked for criteria (Acceptance criteria), that holds no digit, no number word, no code span, no named standard and no quoted name next to a test word
+           why: a list item under "4. Acceptance", which matches Acceptance criteria, a section marked for criteria
+           why: it holds no digit, no number word, no code span, no named standard and no quoted name next to a test word
+           basis: "Enable assessment of work performance against measurable performance standards;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+           basis: "All periodic reports and task deliverables shall be inspected, tested (where applicable), reviewed, and accepted by the Government within a reasonable period of time" (5.1.2 Inspection and Acceptance of Services, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+
+  WARNING  vague-wording           examples/weak-sow.md:34:17
+           vague wording "easy to use" in "4. Acceptance": The portal is easy to use for cafe staff.
+           rule: a phrase of the list (50 phrases) in a paragraph, list item or table cell of a section marked for wording (Deliverables, Acceptance criteria), outside code, quotes and links
+           why: easy to use is on the list of vague phrases, and "4. Acceptance" matches Acceptance criteria, a section marked for wording
+           why: two people can read it two ways, so it cannot decide whether the work is done
+           basis: "Enable assessment of work performance against measurable performance standards;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+           basis: "clear descriptions of the work that needs to be done" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+
+  WARNING  unmeasurable-criterion  examples/weak-sow.md:35:3
+           acceptance criterion with nothing to measure in "4. Acceptance": Pages load quickly.
+           rule: a list item with no list inside it, in a section marked for criteria (Acceptance criteria), that holds no digit, no number word, no code span, no named standard and no quoted name next to a test word
+           why: a list item under "4. Acceptance", which matches Acceptance criteria, a section marked for criteria
+           why: it holds no digit, no number word, no code span, no named standard and no quoted name next to a test word
+           basis: "Enable assessment of work performance against measurable performance standards;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+           basis: "All periodic reports and task deliverables shall be inspected, tested (where applicable), reviewed, and accepted by the Government within a reasonable period of time" (5.1.2 Inspection and Acceptance of Services, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+
+  WARNING  vague-wording           examples/weak-sow.md:35:14
+           vague wording "quickly" in "4. Acceptance": Pages load quickly.
+           rule: a phrase of the list (50 phrases) in a paragraph, list item or table cell of a section marked for wording (Deliverables, Acceptance criteria), outside code, quotes and links
+           why: quickly is on the list of vague phrases, and "4. Acceptance" matches Acceptance criteria, a section marked for wording
+           why: two people can read it two ways, so it cannot decide whether the work is done
+           basis: "Enable assessment of work performance against measurable performance standards;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+           basis: "clear descriptions of the work that needs to be done" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+
+  WARNING  unmeasurable-criterion  examples/weak-sow.md:36:3
+           acceptance criterion with nothing to measure in "4. Acceptance": Orders reach the accounting system.
+           rule: a list item with no list inside it, in a section marked for criteria (Acceptance criteria), that holds no digit, no number word, no code span, no named standard and no quoted name next to a test word
+           why: a list item under "4. Acceptance", which matches Acceptance criteria, a section marked for criteria
+           why: it holds no digit, no number word, no code span, no named standard and no quoted name next to a test word
+           basis: "Enable assessment of work performance against measurable performance standards;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+           basis: "All periodic reports and task deliverables shall be inspected, tested (where applicable), reviewed, and accepted by the Government within a reasonable period of time" (5.1.2 Inspection and Acceptance of Services, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+
+  WARNING  empty-section           examples/weak-sow.md:39:4
+           the heading "5. Timeline" holds nothing but TBD
+           rule: a heading under which, down to the next heading at its level or above, there is no paragraph, list, table, code block or block quote, or where every piece of text is nothing but placeholders
+           why: the heading matches the checklist section Schedule and milestones
+           why: every piece of text under it is a placeholder once the placeholders are taken out
+           basis: "clear descriptions of the work that needs to be done" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+
+  WARNING  empty-section           examples/weak-sow.md:47:4
+           the heading "7. Change requests" has no text under it
+           rule: a heading under which, down to the next heading at its level or above, there is no paragraph, list, table, code block or block quote, or where every piece of text is nothing but placeholders
+           why: the heading matches the checklist section Change control
+           why: there is no paragraph, list, table, code block or block quote before the next heading at its level or above
+           basis: "clear descriptions of the work that needs to be done" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+
+  WARNING  placeholder             examples/weak-sow.md:56:65
+           placeholder to be confirmed in "9. Support": Lanternfield will fix problems in a timely manner after launch, to be confirmed.
+           rule: a placeholder of the list (15 phrases) in a heading or in text of any section, outside code, quotes and links
+           why: to be confirmed is on the list of placeholders; the text around it is not written yet
+           basis: "clear descriptions of the work that needs to be done" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+
+  NOTICE   missing-section         examples/weak-sow.md
+           recommended section Background is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: background, context, introduction, overview, project background, project overview and about the project
+           why: on the checklist because "PROVIDE THE BACKGROUND INFORMATION THAT PROVIDES A HIGH LEVEL DESCRIPTION OF THE REQUIREMENT OF THE CLIENT." and "(4) Background;"
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+  NOTICE   missing-section         examples/weak-sow.md
+           recommended section Assumptions is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: assumptions, assumption, constraints and operating constraints
+           why: on the checklist as the tool's own choice: FAR 37.602 names operating constraints; assumptions are the tool's own addition, because an assumption that is written down can be checked when it turns out wrong.
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+  NOTICE   missing-section         examples/weak-sow.md
+           recommended section Dependencies and client responsibilities is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: dependencies, dependency, client responsibilities, customer responsibilities, buyer responsibilities, client obligations, customer obligations, responsibilities of the client and 4 more
+           why: on the checklist because "DESCRIBE ALL GFE. INCLUDE WHAT IS BEING PROVIDED AND WHEN IT WILL BE PROVIDED."
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+  NOTICE   missing-section         examples/weak-sow.md
+           recommended section Confidentiality is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: confidentiality, confidential information, non disclosure, nondisclosure and nda
+           why: on the checklist as the tool's own choice: No saved page names confidentiality. The tool lists it because an outsourced team sees the client's code, data and plans, and the rules for that information belong in writing.
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+  NOTICE   missing-section         examples/weak-sow.md
+           recommended section Warranty and defects is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: warranty, warranties, warranty period, defects, defect remediation, defect correction, bug fixing, bug fixes and 1 more
+           why: on the checklist because "Performance by the Contractor to correct defects found by the Government as a result of quality assurance surveillance and by the Contractor as a result of quality control"
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+  NOTICE   missing-section         examples/weak-sow.md
+           recommended section Termination is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: termination, terminating the agreement, ending the contract, ending the agreement, exit, exit plan and cancellation
+           why: on the checklist because "You can end a contract for:"
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+  NOTICE   missing-section         examples/weak-sow.md
+           recommended section Governance and reporting is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: governance, reporting, reports, status reporting, progress reporting, communication, communications, meetings and 4 more
+           why: on the checklist because "agree how you'll measure it upfront" and "meet regularly to discuss ongoing performance" and "The client representative will monitor compliance and report to the PM."
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+  NOTICE   missing-section         examples/weak-sow.md
+           recommended section Dispute resolution is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: dispute resolution, disputes and dispute
+           why: on the checklist because "If you disagree with the supplier about the work that's being done and both parties have made all efforts to resolve the dispute, you should follow a dispute resolution process."
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+  NOTICE   missing-section         examples/weak-sow.md
+           recommended section Accessibility is missing
+           rule: a section of the checklist at level required (finding at error) or recommended (finding at notice) for which no heading of the document matches one of its aliases
+           why: no heading matches one of its aliases: accessibility and a11y
+           why: on the checklist because 
+           basis: "A statement of work should include:" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+           basis: "The SOO shall, at a minimum, include-" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+
+Checklist (22)
+
+  missing  recommended  Background
+      aliases: background, context, introduction, overview, project background, project overview, about the project
+      basis: "PROVIDE THE BACKGROUND INFORMATION THAT PROVIDES A HIGH LEVEL DESCRIPTION OF THE REQUIREMENT OF THE CLIENT." (1.0 BACKGROUND, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+      basis: "(4) Background;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+  found    required     Objectives                                line 5 "1. Goals"
+      aliases: objectives, objective, goals, goal, aims, purpose, project objectives, business objectives, outcomes, desired outcomes
+      basis: "DESCRIBE WHAT THIS TASK WILL ACCOMPLISH. THIS SHOULD REFLECT THE END STATE THE CLIENT WANTS TO ACHIEVE." (2.0 OBJECTIVES, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+      basis: "(1) Purpose;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+      basis: "(5) Performance objectives, i.e., required results; and" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+  found    required     In scope                                  line 9 "2. Scope"
+      aliases: in scope, scope, scope of work, scope of services, description of services, description of work, work to be performed, requirements, tasks
+      basis: "clear descriptions of the work that needs to be done" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+      basis: "DESCRIBE THE TYPE OF WORK (RANGE OF TASKS) THE TASK ORDER WILL SUPPORT." (3.0 SCOPE, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+      basis: "(2) Scope or mission;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+  missing  required     Out of scope
+      aliases: out of scope, outside scope, outside the scope, not in scope, exclusions, excluded, excluded work, not included, what is not included
+      the tool's own choice: No saved page names a list of what is excluded. The tool asks for it because work that is in scope only by silence is a frequent cause of disputes; the no-out-of-scope rule checks it next to the scope.
+  found    required     Deliverables                              line 17 "3. Deliverables"
+      aliases: deliverables, deliverable, outputs, work products, what will be delivered
+      basis: "DESCRIBE ALL EXPECTED DELIVERABLES AND THE TIMEFRAME FOR THEIR DELIVERY." (5.1 Deliverables, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+  found    required     Acceptance criteria                       line 30 "4. Acceptance"
+      aliases: acceptance criteria, acceptance, acceptance tests, acceptance testing, user acceptance testing, uat, definition of done, inspection and acceptance, sign off, completion criteria
+      basis: "All periodic reports and task deliverables shall be inspected, tested (where applicable), reviewed, and accepted by the Government within a reasonable period of time" (5.1.2 Inspection and Acceptance of Services, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+      basis: "DESCRIBE ACCEPTANCE CRITERIA AS APPLICABLE TO THE TASK." (5.1.2 Inspection and Acceptance of Services, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+      basis: "Enable assessment of work performance against measurable performance standards;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+  empty    required     Change control                            line 47 "7. Change requests" (empty)
+      aliases: change control, change process, change request, change requests, change management, changes, contract changes, changes to the contract, variations, change order, change orders
+      basis: "You must complete a contract change notice (CCN) if:" (Changes to contracts, https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+  missing  recommended  Assumptions
+      aliases: assumptions, assumption, constraints, operating constraints
+      basis: "(6) Any operating constraints." (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+      the tool's own choice: FAR 37.602 names operating constraints; assumptions are the tool's own addition, because an assumption that is written down can be checked when it turns out wrong.
+  missing  recommended  Dependencies and client responsibilities
+      aliases: dependencies, dependency, client responsibilities, customer responsibilities, buyer responsibilities, client obligations, customer obligations, responsibilities of the client, client dependencies, government furnished items, client furnished items, inputs from the client
+      basis: "DESCRIBE ALL GFE. INCLUDE WHAT IS BEING PROVIDED AND WHEN IT WILL BE PROVIDED." (6.6.9 Government Furnished Items, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+  found    recommended  Roles and contacts                        line 49 "8. Team"
+      aliases: roles, roles and responsibilities, contacts, points of contact, point of contact, key personnel, key contacts, team, project team, staffing, people, stakeholders
+      basis: "a list of people needed to do the work" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+      basis: "1.0 POINTS OF CONTACT." (APPENDIX A, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+  empty    required     Schedule and milestones                   line 39 "5. Timeline" (placeholder)
+      aliases: schedule, milestones, milestone, timeline, timetable, delivery schedule, project schedule, phases, period of performance, duration, time frame, timeframe
+      basis: "how long the work should take" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+      basis: "(3) Period and place of performance;" (37.602 Performance work statement., https://www.acquisition.gov/far/37.602)
+      basis: "The POP for this task is a [#-MONTH BASE + #/DURATION OF OPTIONS]." (6.2 Period of Performance (POP) and FAR Clauses in Full Text or by Reference, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+  found    required     Pricing and payment terms                 line 43 "6. Pricing"
+      aliases: pricing, price, prices, fees, fee, payment, payments, payment terms, payment schedule, invoicing, charges, costs, cost, commercials, commercial terms, budget, rates, compensation
+      basis: "how the buyer will pay for the work, using either the 'fixed price', 'time and materials' or 'capped time and materials' approach" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+      basis: "how much the work will cost" (Understanding the contract scope and writing 'statements of work', https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+      basis: "The contractor shall submit only one invoice per month per order/contract." (7.0 INVOICING/ PROCEDURES FOR PAYMENT, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+  missing  required     Intellectual property and ownership
+      aliases: intellectual property, intellectual property rights, ip, ip rights, ip ownership, ownership, ownership of deliverables, licensing, license, licence
+      basis: "All deliverables become the sole property of the United States Government." (6.6.8 Records/Data, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+  missing  recommended  Confidentiality
+      aliases: confidentiality, confidential information, non disclosure, nondisclosure, nda
+      the tool's own choice: No saved page names confidentiality. The tool lists it because an outsourced team sees the client's code, data and plans, and the rules for that information belong in writing.
+  missing  required     Data protection
+      aliases: data protection, personal data, privacy, data privacy, gdpr, processing of personal data, data processing
+      basis: "Work on this project may require that personnel have access to Privacy Information." (6.6.5 Privacy Act, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+  missing  required     Security requirements
+      aliases: security, security requirements, information security, access control
+      basis: "Note: This requirement must be met on any procurement, IT, PS, etc., where the contractor will have access to government electronic information." (6.4 Security, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+  missing  recommended  Warranty and defects
+      aliases: warranty, warranties, warranty period, defects, defect remediation, defect correction, bug fixing, bug fixes, guarantee
+      basis: "Performance by the Contractor to correct defects found by the Government as a result of quality assurance surveillance and by the Contractor as a result of quality control" (5.1.2 Inspection and Acceptance of Services, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+  found    recommended  Support after delivery                    line 54 "9. Support"
+      aliases: support, maintenance, support and maintenance, post delivery support, after delivery support, hypercare, ongoing support, service levels, sla, handover, transition
+      the tool's own choice: No saved page names support after delivery. The GSA template asks for a transition plan out of the task order, which is close but not the same; the tool lists support because who fixes what after the handover is a frequent question at the end of an outsourced project.
+  missing  recommended  Termination
+      aliases: termination, terminating the agreement, ending the contract, ending the agreement, exit, exit plan, cancellation
+      basis: "You can end a contract for:" (Ending a contract, https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+  missing  recommended  Governance and reporting
+      aliases: governance, reporting, reports, status reporting, progress reporting, communication, communications, meetings, project management, performance management, steering committee, escalation
+      basis: "agree how you'll measure it upfront" (How to manage supplier performance, https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+      basis: "meet regularly to discuss ongoing performance" (How to manage supplier performance, https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+      basis: "The client representative will monitor compliance and report to the PM." (5.1.2 Inspection and Acceptance of Services, https://buy.gsa.gov/api/system/files/documents/Sch_70_SOW_PWS_TaskOrder_Template_opt.pdf)
+  missing  recommended  Dispute resolution
+      aliases: dispute resolution, disputes, dispute
+      basis: "If you disagree with the supplier about the work that's being done and both parties have made all efforts to resolve the dispute, you should follow a dispute resolution process." (Dispute resolution, https://www.gov.uk/guidance/how-to-manage-your-digital-outcomes-and-specialists-contract)
+  missing  recommended  Accessibility
+      aliases: accessibility, a11y
+
+This report checks the structure and the wording of the document only. It is not a legal review and gives no legal advice.
+
+RESULT: FAIL - 17 findings at or above warning

@@ -1,0 +1,40 @@
+sow-gap-check: examples/solid-sow.md
+document: examples/solid-sow.md (139 lines, 23 headings, 8 lists, 2 tables, 1 code block, 0 block quotes)
+checklist: examples/config.json (Brightmoor review rules): 22 sections (11 required, 11 recommended), 50 vague phrases, 15 placeholders
+rules: missing-section (required error, recommended notice); empty-section (warning); placeholder (warning); vague-wording (warning); unmeasurable-criterion (warning); no-out-of-scope (error)
+results: 21 of 22 sections found, 0 empty, 1 missing
+findings: 1 (1 notice); fail level warning
+
+Findings (1)
+
+  NOTICE   missing-section         examples/solid-sow.md
+           recommended section Accessibility is missing
+
+Checklist (22)
+
+  found    recommended  Background                                line 7 "Background"
+  found    required     Objectives                                line 13 "1. Objectives"
+  found    required     In scope                                  line 19 "2. Scope"; line 21 "2.1 In scope"
+  found    required     Out of scope                              line 29 "2.2 Out of scope"
+  found    required     Deliverables                              line 35 "3. Deliverables"
+  found    required     Acceptance criteria                       line 50 "4. Acceptance criteria"
+  found    required     Change control                            line 62 "5. Change control"
+  found    recommended  Assumptions                               line 67 "6. Assumptions"
+  found    recommended  Dependencies and client responsibilities  line 72 "7. Client responsibilities"
+  found    recommended  Roles and contacts                        line 77 "8. Roles and contacts"
+  found    required     Schedule and milestones                   line 85 "9. Milestones"
+  found    required     Pricing and payment terms                 line 92 "10. Pricing and payment terms"
+  found    required     Intellectual property and ownership       line 97 "11. Intellectual property"
+  found    recommended  Confidentiality                           line 102 "12. Confidentiality"
+  found    required     Data protection                           line 106 "13. Data protection"
+  found    required     Security requirements                     line 111 "14. Security requirements"
+  found    recommended  Warranty and defects                      line 117 "15. Warranty"
+  found    recommended  Support after delivery                    line 122 "16. Support after delivery"
+  found    recommended  Termination                               line 136 "19. Termination"
+  found    recommended  Governance and reporting                  line 126 "17. Governance and reporting"
+  found    recommended  Dispute resolution                        line 131 "18. Dispute resolution"
+  missing  recommended  Accessibility
+
+This report checks the structure and the wording of the document only. It is not a legal review and gives no legal advice.
+
+RESULT: PASS - no finding at or above warning (1 below it)
