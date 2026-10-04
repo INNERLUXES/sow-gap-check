@@ -1,0 +1,50 @@
+{
+  "name": "sow-gap-check",
+  "version": "1.0.0",
+  "description": "Checks a statement of work for an outsourced software project, written in Markdown, for gaps: sections of a configurable checklist that are missing (scope, out of scope, deliverables, acceptance criteria, change control, schedule, pricing, ownership and more, matched by their headings), headings with no text or nothing but placeholders, vague words in the deliverables and the acceptance criteria with their line and column, acceptance criteria with nothing to measure, and a scope with no out-of-scope section. Checks structure and wording only; not a legal review. Follows no link, no dependencies.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "sow-gap-check": "bin/sow-gap-check.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "docs",
+    "examples",
+    "research",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "test:coverage": "node --test --experimental-test-coverage \"test/*.test.js\"",
+    "check": "node tools/check.mjs",
+    "example": "node tools/example.mjs"
+  },
+  "keywords": [
+    "statement-of-work",
+    "sow",
+    "outsourcing",
+    "acceptance-criteria",
+    "requirements",
+    "markdown",
+    "commonmark",
+    "linter",
+    "ci",
+    "cli"
+  ],
+  "author": "INNERLUXES <info@innerluxes.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INNERLUXES/sow-gap-check.git"
+  },
+  "homepage": "https://innerluxes.dev/software-development/outsourcing"
+}
