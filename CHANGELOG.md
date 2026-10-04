@@ -1,0 +1,14 @@
+# Changes
+
+## 1.0.0
+
+First release.
+
+- Checks a statement of work for an outsourced software project, written in Markdown, and reports the gaps: sections of a checklist that are missing, headings with no text or nothing but placeholders, placeholders anywhere, vague words in the deliverables and the acceptance criteria with their line and column, acceptance criteria with nothing to measure, and a scope with no out-of-scope section.
+- Six rules: `missing-section`, `empty-section`, `placeholder`, `vague-wording`, `unmeasurable-criterion` and `no-out-of-scope`, each with a level of its own (`notice`, `warning`, `error` or `off`) and the sentences it rests on.
+- A default checklist of 21 sections (8 required, 13 recommended), each matched by heading aliases after numbering, case and punctuation are left out, the longest alias first. Every section, alias, level and list of phrases can be changed in a configuration file; `--print-defaults` writes the defaults out as one. Each default section names the sentences of the saved pages it comes from, or is marked as the tool's own choice.
+- A Markdown reader for a subset of CommonMark (ATX and setext headings, thematic breaks, indented and fenced code blocks, HTML comments, block quotes, lists, paragraphs) and the tables of GitHub Flavored Markdown. Code blocks, code spans, quoted text, block quotes and link destinations are never read for vague words or placeholders. LF, CRLF and CR line ends and a byte order mark give the same report; tabs are read as CommonMark reads them, and columns are the columns of the file.
+- Reports as text, Markdown and JSON, each ending with the sentence that the report checks structure and wording only and is not a legal review. `--explain` shows the rule, the reasons and the quoted sentences behind each finding, and where each section of the checklist comes from. Markdown cells are escaped and guarded against spreadsheet formulas. `--out` writes the report to a file and refuses an input as its path. Exit code `0` when no finding is at or above the fail level, `1` when one is, `2` for a usage or input error, with no verdict.
+- A strict JSON reader for the configuration that refuses a repeated key, every unknown key an error with a suggestion, limits on the files, the lines, the nesting and the findings, and refusal of binary, UTF-16 and invalid UTF-8 input. No link in the document is ever opened.
+- Every quoted sentence comes from the CommonMark and GitHub Flavored Markdown specs, the GSA task order template for a statement of work, FAR 37.602, a GOV.UK guidance page and RFC 8259, saved in `research/sources`; a test compares `src/data.js` and the documents with the saved text.
+- Release packages come with a CycloneDX SBOM, SHA-256 checksums and a build provenance attestation, after the SSDF gate of the repository.
